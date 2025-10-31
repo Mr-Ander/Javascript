@@ -26,7 +26,7 @@ module.exports = {
 
 	// Recebe submissão do formulário (HTML) — simples resposta de confirmação
 	cadastro: (req, res) => {
-		const { nome, preco } = req.body;
+		const { nome, preco, quantidade, descricao } = req.body;
 		if (!nome || !preco) {
 			return res.status(400).send('Campos "nome" e "preco" são obrigatórios.');
 		}

@@ -9,7 +9,7 @@ router.get('/cadastrar', produtosController.formcadproduto);
 router.post('/cadastrar', produtosController.cadastro);
 
 // Endpoints JSON (API) para produtos
-router.get('/api', produtosController.listar);
+router.get('/api', produtosController.produtos);
 router.get('/api/:id', produtosController.mostrar);
 router.post('/api', produtosController.criar);
 router.put('/api/:id', produtosController.atualizar);
